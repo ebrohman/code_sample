@@ -1,0 +1,151 @@
+<h2>Player Info</h2>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    First Name
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :first_name,:class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Last Name
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :last_name, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Nickname
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :nickname, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Nationality
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :nationality, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Age
+  </label>
+  <div class="col-sm-4">
+    <%= f.number_field :age, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Birthday
+  </label>
+  <div class="col-sm-4">
+    <%= f.date_select :birth_day,:class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Birth Country
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :birth_country, :class => "form-control"%>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Birth City
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :birth_city, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Position
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :position, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Striking Foot
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :foot, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Image
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :image, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Height(cm)
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :height_cm, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Weight(kg)
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :weight_kg, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    UUID
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :uuid, :class => "form-control", :required => true %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Team UUID
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :team_uuid, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+    Team ID
+  </label>
+  <div class="col-sm-4">
+    <%= f.text_field :team_id, :class => "form-control" %>
+  </div>
+</div>
+
+<div class="col-sm-2">
+  <%= f.link_to_remove "Remove Player" %>
+</div>
+
+

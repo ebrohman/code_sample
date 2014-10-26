@@ -1,0 +1,23 @@
+<div class="page-header">
+  <%= link_to sponsor_companies_path, :class => 'btn' do %>
+    <i class="icon-list-alt"></i>
+    Back
+  <% end %>
+  <%= link_to edit_sponsor_company_path(@sponsor_company), :class => 'btn btn-primary' do %>
+    <i class="icon-pencil icon-white"></i>
+    Edit
+  <% end %>
+  <h1>Listing sponsor_companies</h1>
+</div>
+
+<dl>
+  <dt>Name:</dt>
+  <dd><%= @sponsor_company.name %></dd>
+
+  <dt>Type:</dt>
+  <dd><%= @sponsor_company.type %></dd>
+
+  <dt>Amount:</dt>
+  <dd><%= @sponsor_company.amount %></dd>
+
+</dl>

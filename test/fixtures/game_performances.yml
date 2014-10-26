@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  goals: 1
+  player_id: 1
+  assists: 1
+  yellow_cards: 1
+  red_cards: 1
+  shots_per_game: 9.99
+  pass_success_percentage: 9.99
+  aerial_duels_won: 1
+
+two:
+  goals: 1
+  player_id: 1
+  assists: 1
+  yellow_cards: 1
+  red_cards: 1
+  shots_per_game: 9.99
+  pass_success_percentage: 9.99
+  aerial_duels_won: 1

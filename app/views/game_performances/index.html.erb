@@ -1,0 +1,45 @@
+<div class="page-header">
+  <%= link_to new_game_performance_path, :class => 'btn btn-primary' do %>
+    <i class="icon-plus icon-white"></i>
+    New Game performance
+  <% end %>
+  <h1>Listing game_performances</h1>
+</div>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Goals</th>
+      <th>Player</th>
+      <th>Assists</th>
+      <th>Yellow cards</th>
+      <th>Red cards</th>
+      <th>Shots per game</th>
+      <th>Pass success percentage</th>
+      <th>Aerial duels won</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+<% @game_performances.each do |game_performance| %>
+    <tr>
+      <td class="match-date"><%= game_performance.match_date %></td>
+      <td class="goals"><%= game_performance.goals %></td>
+      <td class="player-id"><%= game_performance.player_id %></td>
+      <td class="assists"><%= game_performance.assists %></td>
+      <td class="yellow-cards"><%= game_performance.yellow_cards %></td>
+      <td class="red-cards"><%= game_performance.red_cards %></td>
+      <td class="shots-per-game"><%= game_performance.shots_per_game %></td>
+      <td class="pass-success-percentage"><%= game_performance.pass_success_percentage %></td>
+      <td class="aerial-duels-won"><%= game_performance.aerial_duels_won %></td>
+      <td><%= link_to 'Show', game_performance %></td>
+      <td><%= link_to 'Edit', edit_game_performance_path(game_performance) %></td>
+      <td><%= link_to 'Destroy', game_performance, data: { confirm: 'Are you sure?' }, method: :delete %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>

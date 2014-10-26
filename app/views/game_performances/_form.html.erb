@@ -1,0 +1,18 @@
+<%= simple_form_for(@game_performance, :defaults => { :input_html => { :class => 'input-xxlarge' } }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :goals %>
+    <%= f.input :player_id %>
+    <%= f.input :assists %>
+    <%= f.input :yellow_cards %>
+    <%= f.input :red_cards %>
+    <%= f.input :shots_per_game %>
+    <%= f.input :pass_success_percentage %>
+    <%= f.input :aerial_duels_won %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => "btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,33 @@
+<div class="page-header">
+  <%= link_to new_sponsor_company_path, :class => 'btn btn-primary' do %>
+    <i class="icon-plus icon-white"></i>
+    New Company
+  <% end %>
+  <h1>Listing sponsor_companies</h1>
+</div>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Amount</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+<% @sponsor_companies.each do |sponsor_company| %>
+    <tr>
+      <td><%= sponsor_company.name %></td>
+      <td><%= sponsor_company.type %></td>
+      <td><%= sponsor_company.amount %></td>
+      <td><%= link_to 'Show', sponsor_company %></td>
+      <td><%= link_to 'Edit', edit_sponsor_company_path(sponsor_company) %></td>
+      <td><%= link_to 'Destroy', sponsor_company, data: { confirm: 'Are you sure?' }, method: :delete %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>

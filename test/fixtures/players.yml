@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  nickname: MyString
+  nationality: MyString
+  age: 1
+  birth_day: 2014-07-10 22:20:09
+  birth_country: MyString
+  birth_city: MyString
+  position: MyString
+  foot: MyString
+  image: MyString
+  height_cm: 1
+  weight_kg: 1
+  uuid: MyString
+  team_uuid: MyString
+  team_id: 1
+
+two:
+  first_name: MyString
+  last_name: MyString
+  nickname: MyString
+  nationality: MyString
+  age: 1
+  birth_day: 2014-07-10 22:20:09
+  birth_country: MyString
+  birth_city: MyString
+  position: MyString
+  foot: MyString
+  image: MyString
+  height_cm: 1
+  weight_kg: 1
+  uuid: MyString
+  team_uuid: MyString
+  team_id: 1

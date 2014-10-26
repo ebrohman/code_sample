@@ -1,0 +1,38 @@
+<div class="page-header">
+  <%= link_to game_performances_path, :class => 'btn' do %>
+    <i class="icon-list-alt"></i>
+    Back
+  <% end %>
+  <%= link_to edit_game_performance_path(@game_performance), :class => 'btn btn-primary' do %>
+    <i class="icon-pencil icon-white"></i>
+    Edit
+  <% end %>
+  <h1>Listing game_performances</h1>
+</div>
+
+<dl>
+  <dt>Goals:</dt>
+  <dd><%= @game_performance.goals %></dd>
+
+  <dt>Player:</dt>
+  <dd><%= @game_performance.player_id %></dd>
+
+  <dt>Assists:</dt>
+  <dd><%= @game_performance.assists %></dd>
+
+  <dt>Yellow cards:</dt>
+  <dd><%= @game_performance.yellow_cards %></dd>
+
+  <dt>Red cards:</dt>
+  <dd><%= @game_performance.red_cards %></dd>
+
+  <dt>Shots per game:</dt>
+  <dd><%= @game_performance.shots_per_game %></dd>
+
+  <dt>Pass success percentage:</dt>
+  <dd><%= @game_performance.pass_success_percentage %></dd>
+
+  <dt>Aerial duels won:</dt>
+  <dd><%= @game_performance.aerial_duels_won %></dd>
+
+</dl>

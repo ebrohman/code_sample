@@ -1,0 +1,41 @@
+
+
+<div class="page-header">
+  <%= link_to new_team_path, :class => 'btn btn-primary' do %>
+    <i class="icon-plus icon-white"></i>
+    New Team
+  <% end %>
+  <h1>Listing Teams</h1>
+</div>
+
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Logo</th>
+      <th>Website</th>
+      <th>Home stadium</th>
+      <th>Stadium capacity</th>
+      <th>Founding year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teams.each do |team| %>
+      <tr>
+        <td><%= team.name %></td>
+        <td><%= image_tag(team.logo) %></td>
+        <td><%= link_to(team.website) %></td>
+        <td><%= team.home_stadium %></td>
+        <td><%= number_with_delimiter(team.stadium_capacity) %></td>
+        <td><%= team.founding_year %></td>
+        <td><%= link_to 'Show', team %></td>
+        <td><%= link_to 'Edit', edit_team_path(team) %></td>
+        <td><%= link_to 'Destroy', team, data: { confirm: 'Are you sure?' }, method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

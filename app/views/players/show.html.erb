@@ -1,0 +1,65 @@
+<div class="page-header">
+  <%= link_to players_path, :class => 'btn' do %>
+    <i class="icon-list-alt"></i>
+    Back
+  <% end %>
+  <%= link_to edit_player_path(@player), :class => 'btn btn-primary' do %>
+    <i class="icon-pencil icon-white"></i>
+    Edit
+  <% end %>
+  <%= link_to player_report_path(@player), :class => 'btn btn-danger', :remote => true do %>
+    <i class="icon-star" %></i>
+    Report
+  <% end %>
+  <h1>Listing players</h1>
+</div>
+
+<dl>
+  <dt>First name:</dt>
+  <dd><%= @player.first_name %></dd>
+
+  <dt>Last name:</dt>
+  <dd><%= @player.last_name %></dd>
+
+  <dt>Nickname:</dt>
+  <dd><%= @player.nickname %></dd>
+
+  <dt>Nationality:</dt>
+  <dd><%= @player.nationality %></dd>
+
+  <dt>Age:</dt>
+  <dd><%= @player.age %></dd>
+
+  <dt>Birth day:</dt>
+  <dd><%= @player.birth_day %></dd>
+
+  <dt>Birth country:</dt>
+  <dd><%= @player.birth_country %></dd>
+
+  <dt>Birth city:</dt>
+  <dd><%= @player.birth_city %></dd>
+
+  <dt>Position:</dt>
+  <dd><%= @player.position %></dd>
+
+  <dt>Foot:</dt>
+  <dd><%= @player.foot %></dd>
+
+  <dt>Image:</dt>
+  <dd><%= @player.image %></dd>
+
+  <dt>Height cm:</dt>
+  <dd><%= @player.height_cm %></dd>
+
+  <dt>Weight kg:</dt>
+  <dd><%= @player.weight_kg %></dd>
+
+  <dt>Uuid:</dt>
+  <dd><%= @player.uuid %></dd>
+
+  <dt>Team uuid:</dt>
+  <dd><%= @player.team_uuid %></dd>
+
+  <dt>Team:</dt>
+  <dd><%= @player.team_id %></dd>
+</dl>

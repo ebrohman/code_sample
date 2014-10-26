@@ -1,0 +1,100 @@
+
+
+
+<div class="container page-header">
+  <%=image_tag(@player.image) %>
+</div>
+
+<div class="span10">
+  <div class="table">
+    <legend>Averages</legend>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Average Goals</th>
+            <th>Average Assists</th>
+            <th>Average Yellow Cards</th>
+            <th>Average Red Cards</th>
+            <th>Average Shots Per Game</th>
+            <th>Average Pass Success Percentage</th>
+            <th>Average Aerial Duels Won</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @player.average_goals %></td>
+            <td><%= @player.average_assists %></td>
+            <td><%= @player.average_yellow_cards %></td>
+            <td><%= @player.average_red_cards %></td>
+            <td><%= @player.average_shots_per_game %></td>
+            <td><%= @player.average_pass_success_percentage %></td>
+            <td><%= @player.average_aerial_duels_won %></td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <legend>Medians</legend>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Median Goals</th>
+            <th>Median Assists</th>
+            <th>Median Yellow Cards</th>
+            <th>Median Red Cards</th>
+            <th>Median Shots Per Game</th>
+            <th>Median Pass Success Percentage</th>
+            <th>Median Aerial Duels Won</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= GamePerformance.median_goals %></td>
+            <td><%= GamePerformance.median_assists %></td>
+            <td><%= GamePerformance.median_yellow_cards %></td>
+            <td><%= GamePerformance.median_red_cards %></td>
+            <td><%= GamePerformance.median_shots_per_game %></td>
+            <td><%= GamePerformance.median_pass_success_percentage %></td>
+            <td><%= GamePerformance.median_aerial_duels_won %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <legend>Sums</legend>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Sums Goals</th>
+            <th>Sums Assists</th>
+            <th>Sums Yellow Cards</th>
+            <th>Sums Red Cards</th>
+            <th>Sums Shots Per Game</th>
+            <th>Sums Pass Success Percentage</th>
+            <th>Sums Aerial Duels Won</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= GamePerformance.sum_goals %></td>
+            <td><%= GamePerformance.sum_assists %></td>
+            <td><%= GamePerformance.sum_yellow_cards %></td>
+            <td><%= GamePerformance.sum_shots_per_game %></td>
+            <td><%= GamePerformance.sum_red_cards %></td>
+            <td><%= GamePerformance.sum_pass_success_percentage %></td>
+            <td><%= GamePerformance.sum_aerial_duels_won %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

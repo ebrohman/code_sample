@@ -1,0 +1,26 @@
+<%= simple_form_for(@player, :defaults => { :input_html => { :class => 'input-xxlarge' } }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :nickname %>
+    <%= f.input :nationality %>
+    <%= f.input :age %>
+    <%= f.input :birth_day %>
+    <%= f.input :birth_country %>
+    <%= f.input :birth_city %>
+    <%= f.input :position %>
+    <%= f.input :foot %>
+    <%= f.input :image %>
+    <%= f.input :height_cm %>
+    <%= f.input :weight_kg %>
+    <%= f.input :uuid %>
+    <%= f.input :team_uuid %>
+    <%= f.input :team_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => "btn-primary" %>
+  </div>
+<% end %>
